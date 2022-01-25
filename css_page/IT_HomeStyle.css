@@ -1,0 +1,493 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.notice_row{
+
+    width: 100%;
+    height: 30px;
+    background: red;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    animation: notice_row 10s ;
+    animation-timing-function: linear;
+    
+    animation-iteration-count: infinite;
+}
+.n{
+    display: flex;
+    position: relative;
+    margin: 5px;
+}
+.n1{
+    
+    text-align: left;
+    width: 20%;
+   padding-left: 30px;
+  position: absolute;
+  top: 0;
+  animation: n1 1s ;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;  
+}
+@keyframes n1{
+    form{
+        top: 0;
+        left: 0;
+    }
+    to{
+        top: 0;
+        left: 100%;
+    }
+
+}
+
+.n2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+   text-align: left;
+    animation: n2 10s infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+@keyframes n2{
+    from{
+        top: 0;
+        left: 100%;
+    }
+    to{
+        top:0;
+        left: 20%;
+    }
+
+}
+.navbar{
+    
+    display: flex;
+    position: sticky;
+    top: 30px;
+}
+.logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 70%;
+}
+
+.nav-list{
+    width: 50%;
+    /* background-color:rgb(184, 126, 238); */
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+        list-style: none;
+        font-size: 25px;
+        padding: 10px;
+        
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    padding-left: 50px;
+
+}
+.nav-list li a:hover{
+   color: red;
+
+}
+.rightnav{
+    /* background-color:rgb(184, 126, 238); */
+    width: 50%;
+    text-align: right ;
+
+}
+
+.btnsign{
+    font-size: 18px;  
+    border: 2px rgb(199, 38, 194) solid ;
+    background-color: purple ;
+    color: white;
+    padding: 4px;
+    border-radius: 10px;
+    background: none;
+    /* padding-left: 11px; */
+    
+    /* margin-left: 200px; */
+}
+
+.btnlogin{
+    font-size: 18px;  
+    border: 2px rgb(199, 38, 194) solid ;
+    background-color: purple ;
+    color: white;
+    padding: 4px;
+    border-radius: 10px;
+    margin: 13px;
+    padding-left: 11px;
+    padding-right: 11px;
+    /* margin-left: 200px; */
+    background: none;
+}
+.btnlogout{
+    font-size: 18px;  
+    border: 2px rgb(199, 38, 194) solid ;
+    background-color: purple ;
+    color: white;
+    padding: 4px;
+    border-radius: 10px;
+    margin-right: 20px;
+    background: none;
+}
+
+.btnsign:hover{
+    box-shadow: 0px 0px 10px 2px rgb(207, 206, 206);
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.btnlogin:hover{
+    box-shadow: 0px 0px 10px 2px rgb(207, 206, 206);
+    font-size: 19px;
+    cursor: pointer;
+}
+.btnlogout:hover{
+    box-shadow: 0px 0px 10px 2px rgb(207, 206, 206);
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.background{
+    background: rgba(0,0,0,0.89) url('imagesgita.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.wlcm{
+    text-align: center;
+    color: turquoise;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 11px;
+}
+.firstSection{
+    height: 100vh;
+}
+.firstHalf{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2%;
+    margin-right: 3%;
+    color: rgb(219, 26, 90);
+   
+}
+.text-big{
+    color: cornsilk;
+    font-size: 14px;
+}
+
+.secondHalf{
+    width: 50%;
+    height: 300px;
+    margin-top: 50px;
+    margin-right: 4%;
+}
+.secondHalf box{
+    width: 50%;
+    border:2px crimson solid;
+    background: crimson;
+    height: 300px;
+}
+.secondHalf img{
+    width: 50%;
+    border: solid white;
+    border-radius: 161px;
+    display: block;
+    margin: auto;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  
+}
+
+.navi{
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    position: sticky;
+    top: 30px;
+    overflow: hidden;
+    display: flex;
+}
+
+.navi div{
+
+    font-size: 20px;
+    color: azure;
+    padding: 11px;
+   
+}
+.notice{
+
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    position: sticky;
+    top: 0px;
+    font-size: 20px;
+    color: white;
+    animation: notice 5s;
+    animation-timing-function: linear;
+    overflow: hidden;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+    
+}
+.n1{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        animation: n1 11s ;
+        text-align: center;
+        left: 0px;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+
+
+}
+@keyframes n1{
+
+    from{
+        top: 0px;
+        left: 100%;
+    }
+    to{
+        top:0px;
+        left:-160%;
+    }
+}
+
+
+.main{
+    width: 100%;
+    height: 700px;
+    background-color: chartreuse;
+    
+    overflow: hidden;
+}
+.welcom_text_row{
+    height:50px;
+    text-align: center;
+    color: crimson;
+    
+}
+
+h1{
+    border: 2px darkorange solid;
+    margin-bottom: 0px;
+} 
+
+.member_row{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    height: 500px;
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.member_row div{
+        
+        padding: 50px;
+        background: aqua;
+        margin: 30px;
+        border-radius: 30px;
+
+}
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.container{
+    width: 100%;
+    height: 280px;
+    /* overflow-x: hidden; */
+    /* position: relative; */
+    /* overflow-y: scroll; */
+/* }
+
+.main{
+    width: 100%;
+    height: 700px;
+    /* border: 2px black solid; */
+    /* overflow: hidden;
+    position: relative;
+    
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.img_row{
+    width: 100%;
+    height: 200px; */
+    /* margin: auto; */
+    /* border:3px hotpink solid; */
+    /* overflow: hidden; */
+    /* position: absolute; */
+/* } */ 
+
+/* .menu_row{
+    width: 100%;
+    height: 50px;
+    border: 2px black solid;
+    /* position: absolute; */
+    /* overflow: hidden;
+    background: blueviolet;
+    position: sticky;
+    top: 0px;
+} */
+
+/* 
+.notice_row{
+
+    width: 100%;
+    height: 30px;
+    border: 2px red solid;
+    background: red;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 257px;
+    animation: notice_row 10s ;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+} */
+
+/* .welcom_text_row{
+    width: 100%;
+    height: 150px;
+    color: darkmagenta;
+    text-align: center;
+    position: absolute;
+    top: 292px;
+}
+h1{
+    border: 2px darkorange solid;
+} */
+
+/* .member_row{
+
+    width: 80%;
+    height: 300px;
+    border:2px darkorange solid;
+    left: 10%;
+    position: absolute;
+    top: 370px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 80px;
+} */
+
+/* #mem_c1,#mem_c2{
+    border:2px darkred solid;
+}
+
+@keyframes notice_row{
+    from{
+        top: 257px;
+        right: 0%;
+    }
+    to{
+        top:257;
+        right: 140%;
+    }
+} */ 
