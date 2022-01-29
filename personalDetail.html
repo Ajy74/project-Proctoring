@@ -2,39 +2,136 @@
     <head>
         <title>Personal Details</title>
         <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            .main{
+                width: 100%;
+               
+            }
+            
+            .img{
+                text-align: center;
+                padding: 8px;
+            }
+            /* .gita{
+                text-align: center;
+                size: ;        
+            } */
+            .head{
+                text-align: center;
+                font-size: large;
+                font-style: bold;
+            }
+
+            h2{
+                margin: 20px;
+            }
+            .container{
+                width: 100%;
+            }
+            .form{
+                width: 100%;
+                background-color: aqua;
+                font-size: 21px;
+            }
+            
+            #txt{
+                width: 66%;
+                /* text-align: center;   */
+                margin: 9px;
+                padding: 5px;
+                margin-left: 7.5%;
+                font-size: 21px;
+            }
+            #regisrtation,#Roll,#p1,#ph1,#p2,#ph2, #hostel, #room{
+                width: 40.7%;
+                padding: 5px;
+                margin: 9px;
+                margin-left: 10px;
+                font-size: 21px;
+            }
+            /* #radio {
+             
+                margin-right: 20px;
+            }
+            #radio1{
+                margin-left: 20px;
+            } */
+/* 
+            #hostel, #room{
+                width: 41%;
+                padding: 5px;
+                margin: 9px;
+                margin-left: 10px;
+            } */
+            #father{
+                width: 84%;
+                padding: 5px;
+                margin: 9px;
+                margin-left: 7.5%;
+                font-size: 21px;
+            }
+            #sp ,#pp ,#emr,#dob,#blood,#hob{
+                width: 26.4%;
+                padding: 5px;
+                margin: 8.5px;
+                font-size: 21px;
+            }
+            #regisrtation,#hostel, #sp,#dobtxt,#p1,#p2{
+                margin-left: 7.5%;
+            } 
+            #dob{
+                width: 18.8%;
+            }
+            #dobtxt{
+                display: inline;
+                font-size: 24px;
+            }
+            input{
+                color: rgb(197, 15, 106);
+                border-radius: 9px;
+                border: none;
+                /* box-shadow: 0px 0px 10px 2px grey; */
+            }
+            
 
         </style>
     </head>
     <body>
         <div class="main" >
-            <section >
+            <section class="img" >
                 <img src="image/gitalog.png" alt="Logo">
-                <section>GITA AUTONOMOUS COLLEGE,BHUBANESHWAR</section>
+                <!-- <section class="gita">GITA AUTONOMOUS COLLEGE,BHUBANESHWAR</section> -->
             <hr>
             </section>
-            <section>PROCTOR FORM<br/>BATCH:2020-24 , BRANCH:CSIT<br></section>
-            <div>
+            <section class="head">PROCTOR FORM<br/>BATCH:2020-24 , BRANCH:CSIT<br></section>
+            <div class="container">
                 <h2><b><u>PERSONAL DETAILS</u></b></h2>
-                <form>
-                    <input type="text" name="student name" placeholder="Name of the Student"/><br/>
-                    <input type="number" name="regisrtation no" placeholder="Registration No"/>
-                    <input type="number" name="Roll no" placeholder="Roll No"/><br/>
-                    <section >
-                        Hosteler <input type="radio" name="Hosteler" value="H"/>  Day Scholar <input type="radio" name="Day Scholar" value="D"/>
-                    </section>
-                    <input type="password" name="Hostel no " placeholder="HOstel No"/>
-                    <input type="number" name="Room no" placeholder="Room No"/><br/>
-                    <input type="text" name="Guardian"  placeholder="Father's Name"/><br/>
-                    <input type="number" name="stud phone" placeholder="Student Contact"/>
-                    <input type="number" name="parent " placeholder="Parent Contact"/>
-                    <input type="number" name="emrg" placeholder="Emergency Contact"/><br/>
-                    <input type="date" name="DOB" placeholder="DOB"/>
-                    <input type="text" name="blood" placeholder="Blood Grp"/>
-                    <input type="text" name="Hobby" placeholder="Hobby"/><br/>
-                    <input type="text" name="1st yr p" placeholder="Name of 1st Year Proctor"/>
-                    <input type="number" name="p1 no" placeholder="Contact No"/><br/>
-                    <input type="text" name="proctor" placeholder="Name of the 2nd/3rd/4th Year Proctor"/>
-                    <input type="number" name="contact" placeholder="Contact No"/>
+                <form class="form">
+                    <input id="txt" type="text" name="student name" placeholder="Name of the Student"/>
+                    Hosteler <input id="radio" type="radio" name="Hosteler" value="H"/>  Day Scholar <input id="radio1" type="radio" name="Day Scholar" value="D"/><br/>
+                    <input id="father" type="text" name="Guardian"  placeholder="Father's Name"/><br/>
+                    <input id="regisrtation" type="number" name="regisrtation no" placeholder="Registration No"/>
+                    <input id="Roll" type="number" name="Roll no" placeholder="Roll No"/><br/>
+                    <!-- <section class="radio" > -->
+                        <!-- Hosteler <input id="radio" type="radio" name="Hosteler" value="H"/>  Day Scholar <input id="radio" type="radio" name="Day Scholar" value="D"/> -->
+                    <!-- </section> -->
+                      <input id="hostel" type="password" name="Hostel no " placeholder="Hostel No"/>
+                    <input id="room" type="number" name="Room no" placeholder="Room No"/><br/>
+                    <!-- <input id="father" type="text" name="Guardian"  placeholder="Father's Name"/><br/> -->
+                    <input id="sp" type="number" name="stud phone" placeholder="Student Contact"/>
+                    <input id="pp" type="number" name="parent " placeholder="Parent Contact"/>
+                    <input id="emr" type="number" name="emrg" placeholder="Emergency Contact"/><br/>
+                   <h2 id="dobtxt">DOB:-</h2><input id="dob" type="date" name="DOB" placeholder="DOB"/>
+                    <input id="blood" type="text" name="blood" placeholder="Blood Grp"/>
+                    <input id="hob" type="text" name="Hobby" placeholder="Hobby"/><br/>
+                    <input id="p1" type="text" name="1st yr p" placeholder="Name of 1st Year Proctor"/>
+                    <input id="ph1" type="number" name="p1 no" placeholder="Contact No"/><br/>
+                    <input id="p2" type="text" name="proctor" placeholder="Name of the 2nd/3rd/4th Year Proctor"/>
+                    <input id="ph2" type="number" name="contact" placeholder="Contact No"/>
                     
                 </form>
             </div>
