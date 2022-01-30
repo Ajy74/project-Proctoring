@@ -1,5 +1,9 @@
 <!DOCTYPE html>
     <head>
+
+     <!-- <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
         <title>Personal Details</title>
         <style type="text/css">
             *{
@@ -11,15 +15,10 @@
                 width: 100%;
                
             }
-            
             .img{
                 text-align: center;
                 padding: 8px;
             }
-            /* .gita{
-                text-align: center;
-                size: ;        
-            } */
             .head{
                 text-align: center;
                 font-size: large;
@@ -36,49 +35,35 @@
                 width: 100%;
                 background-color: aqua;
                 font-size: 21px;
+                /* text-align: justify; */
             }
             
             #txt{
                 width: 66%;
-                /* text-align: center;   */
+                text-align: justify;  
                 margin: 9px;
                 padding: 5px;
                 margin-left: 7.5%;
-                font-size: 21px;
+              
             }
             #regisrtation,#Roll,#p1,#ph1,#p2,#ph2, #hostel, #room{
                 width: 40.7%;
                 padding: 5px;
                 margin: 9px;
                 margin-left: 10px;
-                font-size: 21px;
+              
             }
-            /* #radio {
-             
-                margin-right: 20px;
-            }
-            #radio1{
-                margin-left: 20px;
-            } */
-/* 
-            #hostel, #room{
-                width: 41%;
-                padding: 5px;
-                margin: 9px;
-                margin-left: 10px;
-            } */
             #father{
                 width: 84%;
                 padding: 5px;
                 margin: 9px;
                 margin-left: 7.5%;
-                font-size: 21px;
             }
             #sp ,#pp ,#emr,#dob,#blood,#hob{
                 width: 26.4%;
                 padding: 5px;
                 margin: 8.5px;
-                font-size: 21px;
+              
             }
             #regisrtation,#hostel, #sp,#dobtxt,#p1,#p2{
                 margin-left: 7.5%;
@@ -91,12 +76,27 @@
                 font-size: 24px;
             }
             input{
+                font-size: 20px;
                 color: rgb(197, 15, 106);
                 border-radius: 9px;
                 border: none;
-                /* box-shadow: 0px 0px 10px 2px grey; */
+                outline: none;
             }
-            
+            #btnNext{
+                width: 100px;
+                padding: 10px;
+                margin-left: 46%;
+                border-radius: 11px;
+               border: none;
+               color: cornsilk;
+               font-size: large;
+                background-color: rgb(236, 20, 136);
+            }
+            #btnNext:hover{
+                box-shadow: 0px 0px 10px 2px rgb(236, 20, 136);
+                background: transparent;
+                color: rgb(236, 20, 136);
+            }
 
         </style>
     </head>
@@ -105,7 +105,7 @@
             <section class="img" >
                 <img src="image/gitalog.png" alt="Logo">
                 <!-- <section class="gita">GITA AUTONOMOUS COLLEGE,BHUBANESHWAR</section> -->
-            <hr>
+            <hr/>
             </section>
             <section class="head">PROCTOR FORM<br/>BATCH:2020-24 , BRANCH:CSIT<br></section>
             <div class="container">
@@ -116,25 +116,26 @@
                     <input id="father" type="text" name="Guardian"  placeholder="Father's Name"/><br/>
                     <input id="regisrtation" type="number" name="regisrtation no" placeholder="Registration No"/>
                     <input id="Roll" type="number" name="Roll no" placeholder="Roll No"/><br/>
-                    <!-- <section class="radio" > -->
-                        <!-- Hosteler <input id="radio" type="radio" name="Hosteler" value="H"/>  Day Scholar <input id="radio" type="radio" name="Day Scholar" value="D"/> -->
-                    <!-- </section> -->
-                      <input id="hostel" type="password" name="Hostel no " placeholder="Hostel No"/>
+                    <input id="hostel" type="text" name="Hostel no " placeholder="Hostel No"/>
                     <input id="room" type="number" name="Room no" placeholder="Room No"/><br/>
-                    <!-- <input id="father" type="text" name="Guardian"  placeholder="Father's Name"/><br/> -->
                     <input id="sp" type="number" name="stud phone" placeholder="Student Contact"/>
                     <input id="pp" type="number" name="parent " placeholder="Parent Contact"/>
                     <input id="emr" type="number" name="emrg" placeholder="Emergency Contact"/><br/>
-                   <h2 id="dobtxt">DOB:-</h2><input id="dob" type="date" name="DOB" placeholder="DOB"/>
+                    <h2 id="dobtxt">DOB:-</h2><input id="dob" type="date" name="DOB" placeholder="DOB"/>
                     <input id="blood" type="text" name="blood" placeholder="Blood Grp"/>
                     <input id="hob" type="text" name="Hobby" placeholder="Hobby"/><br/>
                     <input id="p1" type="text" name="1st yr p" placeholder="Name of 1st Year Proctor"/>
                     <input id="ph1" type="number" name="p1 no" placeholder="Contact No"/><br/>
                     <input id="p2" type="text" name="proctor" placeholder="Name of the 2nd/3rd/4th Year Proctor"/>
                     <input id="ph2" type="number" name="contact" placeholder="Contact No"/>
-                    
+                </br></br><button id="btnNext" onclick="next()">NEXT</button></br></br>
                 </form>
             </div>
         </div>
     </body>
+    <script type="text/javascript">
+        function next(){
+            alert("confirm..");
+        }
+    </script>
 </html>
